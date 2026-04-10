@@ -40,30 +40,37 @@
   --color-black: #{$color-black};
   --color-shadow-nav: #{$color-shadow-nav};
 
-  // Semantic — Surface
+  // Semantic — Surface（區塊底色）
   --surface-base:   #{$surface-base};
   --surface-header: #{$surface-header};
   --surface-footer: #{$surface-footer};
 
+  // Semantic — Background（元件內部背景）
+  --bg-input: #{$bg-input};
+
   // Semantic — Text
-  --text-heading:     #{$text-heading};
-  --text-nav:         #{$text-nav};
-  --text-nav-hover:   #{$text-nav-hover};
-  --text-nav-pressed: #{$text-nav-pressed};
-  --text-content:     #{$text-content};
-  --text-caption:     #{$text-caption};
-  --text-label:       #{$text-label};
-  --text-on-primary:  #{$text-on-primary};
+  --text-heading:           #{$text-heading};
+  --text-nav:               #{$text-nav};
+  --text-nav-hover:         #{$text-nav-hover};
+  --text-nav-pressed:       #{$text-nav-pressed};
+  --text-content:           #{$text-content};
+  --text-caption:           #{$text-caption};
+  --text-label:             #{$text-label};
+  --text-input:             #{$text-input};
+  --text-input-placeholder: #{$text-input-placeholder};
+  --text-on-primary:        #{$text-on-primary};
 
   // Semantic — Icon
-  --icon-default: #{$icon-default};
-
-  // Semantic — Button
-  --btn-logout: #{$btn-logout};
+  --icon-ui:             #{$icon-ui};
+  --icon-action:         #{$icon-action};
+  --icon-action-hover:   #{$icon-action-hover};
+  --icon-action-pressed: #{$icon-action-pressed};
 
   // Semantic — Border
-  --border-divider: #{$border-divider};
-  --border-accent:  #{$border-accent};
+  --border-divider:     #{$border-divider};
+  --border-accent:      #{$border-accent};
+  --border-input:       #{$border-input};
+  --border-input-focus: #{$border-input-focus};
 
   // Spacing
   --spacing-4:  #{$spacing-4};

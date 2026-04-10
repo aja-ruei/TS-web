@@ -41,25 +41,37 @@ $color-shadow-nav: rgba(54, 64, 83, 0.08);
 // --------------------------------------------------------------------------
 // Semantic — Colors（對應 Figma Semantic collection）
 // --------------------------------------------------------------------------
-$surface-base:   $color-neutral-100;
+// Surface（區塊底色）
+$surface-base:   $color-neutral-50;
 $surface-header: $color-white;
 $surface-footer: $color-ts-red-500;
 
-$text-heading:     $color-black;
-$text-nav:         $color-neutral-700;
-$text-nav-hover:   $color-ts-red-500;
-$text-nav-pressed: $color-ts-red-700;
-$text-content:     $color-neutral-700;
-$text-caption:     $color-neutral-500;
-$text-label:       $color-neutral-500;
-$text-on-primary:  $color-white;
+// Background（元件內部背景）
+$bg-input: $color-white;
 
-$icon-default: $color-neutral-700;
+// Text
+$text-heading:           $color-black;
+$text-nav:               $color-neutral-800;
+$text-nav-hover:         $color-ts-red-500;
+$text-nav-pressed:       $color-ts-red-700;
+$text-content:           $color-neutral-700;
+$text-caption:           $color-neutral-500;
+$text-label:             $color-neutral-500;
+$text-input:             $color-black;
+$text-input-placeholder: $color-neutral-500;
+$text-on-primary:        $color-white;
 
-$btn-logout: $color-ts-red-500;
+// Icon
+$icon-ui:             $color-neutral-700;
+$icon-action:         $color-neutral-700;
+$icon-action-hover:   $color-ts-red-500;
+$icon-action-pressed: $color-ts-red-700;
 
-$border-divider: $color-neutral-200;
-$border-accent:  $color-ts-red-500;
+// Border
+$border-divider:     $color-neutral-200;
+$border-accent:      $color-ts-red-500;
+$border-input:       $color-neutral-200;
+$border-input-focus: $color-neutral-400;
 
 // --------------------------------------------------------------------------
 // Primitive — Spacing （對應 Figma Primitive collection）
