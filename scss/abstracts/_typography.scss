@@ -1,0 +1,54 @@
+// ==========================================================================
+// Typography Mixins
+// 使用 CSS custom properties（由 main.scss 生成），不直接使用 SCSS 變數
+// ==========================================================================
+
+@mixin heading-title {
+  font-family: var(--font-family);
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-wide);
+  color: var(--text-heading);
+}
+
+@mixin text-nav {
+  font-family: var(--font-family);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-wide);
+  letter-spacing: var(--letter-spacing-wide);
+}
+
+@mixin text-body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-wide);
+}
+
+@mixin text-base {
+  font-family: var(--font-family);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-wide);
+}
+
+@mixin text-sm {
+  font-family: var(--font-family);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-wide);
+}
+
+@mixin text-xs {
+  font-family: var(--font-family);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-wide);
+}
+
+@mixin text-en {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-wide);
+}

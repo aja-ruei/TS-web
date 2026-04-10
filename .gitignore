@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+
+# Docs (not tracked)
+docs/
+
+# Node
+node_modules/
+
+# Sass
+.sass-cache/
+*.css.map

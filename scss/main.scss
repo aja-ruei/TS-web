@@ -1,0 +1,114 @@
+// ==========================================================================
+// Main Entry
+// ==========================================================================
+
+@use 'sass:map';
+@use 'abstracts/variables' as *;
+
+// ==========================================================================
+// CSS Custom Properties — Primitive（色票，不直接用於元件）
+// ==========================================================================
+:root {
+  // TS Red
+  --color-ts-red-100: #{$color-ts-red-100};
+  --color-ts-red-300: #{$color-ts-red-300};
+  --color-ts-red-500: #{$color-ts-red-500};
+  --color-ts-red-700: #{$color-ts-red-700};
+  --color-ts-red-900: #{$color-ts-red-900};
+
+  // RC Blue
+  --color-rc-blue-100: #{$color-rc-blue-100};
+  --color-rc-blue-300: #{$color-rc-blue-300};
+  --color-rc-blue-500: #{$color-rc-blue-500};
+  --color-rc-blue-700: #{$color-rc-blue-700};
+  --color-rc-blue-900: #{$color-rc-blue-900};
+
+  // Neutral
+  --color-neutral-50:  #{$color-neutral-50};
+  --color-neutral-100: #{$color-neutral-100};
+  --color-neutral-200: #{$color-neutral-200};
+  --color-neutral-300: #{$color-neutral-300};
+  --color-neutral-400: #{$color-neutral-400};
+  --color-neutral-500: #{$color-neutral-500};
+  --color-neutral-600: #{$color-neutral-600};
+  --color-neutral-700: #{$color-neutral-700};
+  --color-neutral-800: #{$color-neutral-800};
+  --color-neutral-900: #{$color-neutral-900};
+
+  // Others
+  --color-white: #{$color-white};
+  --color-black: #{$color-black};
+  --color-shadow-nav: #{$color-shadow-nav};
+
+  // Semantic — Surface
+  --surface-base:   #{$surface-base};
+  --surface-header: #{$surface-header};
+  --surface-footer: #{$surface-footer};
+
+  // Semantic — Text
+  --text-heading:     #{$text-heading};
+  --text-nav:         #{$text-nav};
+  --text-nav-hover:   #{$text-nav-hover};
+  --text-nav-pressed: #{$text-nav-pressed};
+  --text-content:     #{$text-content};
+  --text-caption:     #{$text-caption};
+  --text-label:       #{$text-label};
+  --text-on-primary:  #{$text-on-primary};
+
+  // Semantic — Icon
+  --icon-default: #{$icon-default};
+
+  // Semantic — Button
+  --btn-logout: #{$btn-logout};
+
+  // Semantic — Border
+  --border-divider: #{$border-divider};
+  --border-accent:  #{$border-accent};
+
+  // Spacing
+  --spacing-4:  #{$spacing-4};
+  --spacing-8:  #{$spacing-8};
+  --spacing-10: #{$spacing-10};
+  --spacing-12: #{$spacing-12};
+  --spacing-16: #{$spacing-16};
+  --spacing-20: #{$spacing-20};
+  --spacing-24: #{$spacing-24};
+  --spacing-80: #{$spacing-80};
+
+  // Shadows
+  --shadow-nav: #{$shadow-nav};
+
+  // Language — 預設中文（對應 Figma Language collection tw mode）
+  --font-family: #{$font-family-tw};
+  --font-family-tw: #{$font-family-tw};
+  --font-family-en: #{$font-family-en};
+
+  // Responsive — Desktop defaults (自動從 $responsive map 生成)
+  @each $name, $modes in $responsive {
+    --#{$name}: #{map.get($modes, desktop)};
+  }
+}
+
+// ==========================================================================
+// Mobile — 只輸出與 Desktop 不同的值
+// ==========================================================================
+@media (max-width: $breakpoint-mobile-max) {
+  :root {
+    @each $name, $modes in $responsive {
+      $desktop: map.get($modes, desktop);
+      $mobile: map.get($modes, mobile);
+      @if $mobile != $desktop {
+        --#{$name}: #{$mobile};
+      }
+    }
+  }
+}
+
+// ==========================================================================
+// Language 覆寫 — 對應 Figma Language collection en mode
+// 使用 html[lang="en"] 或 .lang-en 切換英文字型
+// ==========================================================================
+html[lang='en'],
+.lang-en {
+  --font-family: #{$font-family-en};
+}

@@ -1,0 +1,129 @@
+// ==========================================================================
+// Design Tokens — Variables
+// 基準：1rem = 16px
+// ==========================================================================
+
+// --------------------------------------------------------------------------
+// Primitive — Colors（對應 Figma Primitive collection）
+// --------------------------------------------------------------------------
+
+// TS Red
+$color-ts-red-100: #f7ced1;
+$color-ts-red-300: #eb858b;
+$color-ts-red-500: #d70c18;
+$color-ts-red-700: #a10912;
+$color-ts-red-900: #6c060c;
+
+// RC Blue
+$color-rc-blue-100: #e2fbfe;
+$color-rc-blue-300: #64cedb;
+$color-rc-blue-500: #17b6c9;
+$color-rc-blue-700: #15a6b7;
+$color-rc-blue-900: #10818f;
+
+// Neutral
+$color-neutral-50:  #f3f5f6;
+$color-neutral-100: #edf0f2;
+$color-neutral-200: #dce0e5;
+$color-neutral-300: #cdd3d9;
+$color-neutral-400: #b6bec7;
+$color-neutral-500: #727d8c;
+$color-neutral-600: #48556c;
+$color-neutral-700: #364053;
+$color-neutral-800: #222935;
+$color-neutral-900: #1b2028;
+
+// Others
+$color-white: #fdfdfd;
+$color-black: #09090a;
+$color-shadow-nav: rgba(54, 64, 83, 0.08);
+
+// --------------------------------------------------------------------------
+// Semantic — Colors（對應 Figma Semantic collection）
+// --------------------------------------------------------------------------
+$surface-base:   $color-neutral-100;
+$surface-header: $color-white;
+$surface-footer: $color-ts-red-500;
+
+$text-heading:     $color-black;
+$text-nav:         $color-neutral-700;
+$text-nav-hover:   $color-ts-red-500;
+$text-nav-pressed: $color-ts-red-700;
+$text-content:     $color-neutral-700;
+$text-caption:     $color-neutral-500;
+$text-label:       $color-neutral-500;
+$text-on-primary:  $color-white;
+
+$icon-default: $color-neutral-700;
+
+$btn-logout: $color-ts-red-500;
+
+$border-divider: $color-neutral-200;
+$border-accent:  $color-ts-red-500;
+
+// --------------------------------------------------------------------------
+// Primitive — Spacing
+// --------------------------------------------------------------------------
+$spacing-4:  0.25rem;
+$spacing-8:  0.5rem;
+$spacing-10: 0.625rem;
+$spacing-12: 0.75rem;
+$spacing-16: 1rem;
+$spacing-20: 1.25rem;
+$spacing-24: 1.5rem;
+$spacing-80: 5rem;
+
+// --------------------------------------------------------------------------
+// Shadows
+// --------------------------------------------------------------------------
+$shadow-nav: 0px 1px 4px $color-shadow-nav;
+
+// --------------------------------------------------------------------------
+// Language — Font Family（對應 Figma Language collection, tw / en mode）
+// CSS 中以 class 或 html[lang] 切換，而非 media query
+// --------------------------------------------------------------------------
+$font-family-tw: 'Noto Sans TC', sans-serif;
+$font-family-en: 'Montserrat', sans-serif;
+
+// --------------------------------------------------------------------------
+// Breakpoints
+// --------------------------------------------------------------------------
+$breakpoint-mobile-min: 320px;
+$breakpoint-mobile-max: 1199px;
+$breakpoint-desktop-min: 1200px;
+
+// --------------------------------------------------------------------------
+// Responsive — Desktop / Mobile mode
+// 對應 Figma Responsive collection，用 SCSS Map 統一管理
+// main.scss 中循環輸出 :root 和 @media 覆寫
+// --------------------------------------------------------------------------
+$responsive: (
+  // Font Size
+  'font-size-3xl': (desktop: 2rem,      mobile: 1.5rem),
+  'font-size-2xl': (desktop: 1.5rem,    mobile: 1.25rem),
+  'font-size-xl':  (desktop: 1.25rem,   mobile: 1.125rem),
+  'font-size-lg':  (desktop: 1.125rem,  mobile: 1rem),
+  'font-size-md':  (desktop: 1rem,      mobile: 0.875rem),
+  'font-size-sm':  (desktop: 0.875rem,  mobile: 0.75rem),
+  'font-size-xs':  (desktop: 0.75rem,   mobile: 0.625rem),
+
+  // Font Weight
+  'font-weight-regular': (desktop: 400, mobile: 400),
+  'font-weight-medium':  (desktop: 500, mobile: 500),
+  'font-weight-bold':    (desktop: 700, mobile: 700),
+
+  // Letter Spacing
+  'letter-spacing-wide':   (desktop: 1px,  mobile: 0),
+  'letter-spacing-normal': (desktop: 0,    mobile: 0),
+
+  // Line Height
+  'line-height-wide':   (desktop: 1.4, mobile: 1.4),
+  'line-height-normal': (desktop: 1,   mobile: 1),
+
+  // Radius
+  'radius-btn-pill': (desktop: 5rem, mobile: 5rem),
+
+  // // Layout
+  // 'layout-viewport': (desktop: 1440px, mobile: 375px),
+  // 'layout-content':  (desktop: 1280px, mobile: 351px),
+);

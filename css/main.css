@@ -1,0 +1,86 @@
+:root {
+  --color-ts-red-100: #f7ced1;
+  --color-ts-red-300: #eb858b;
+  --color-ts-red-500: #d70c18;
+  --color-ts-red-700: #a10912;
+  --color-ts-red-900: #6c060c;
+  --color-rc-blue-100: #e2fbfe;
+  --color-rc-blue-300: #64cedb;
+  --color-rc-blue-500: #17b6c9;
+  --color-rc-blue-700: #15a6b7;
+  --color-rc-blue-900: #10818f;
+  --color-neutral-50: #f3f5f6;
+  --color-neutral-100: #edf0f2;
+  --color-neutral-200: #dce0e5;
+  --color-neutral-300: #cdd3d9;
+  --color-neutral-400: #b6bec7;
+  --color-neutral-500: #727d8c;
+  --color-neutral-600: #48556c;
+  --color-neutral-700: #364053;
+  --color-neutral-800: #222935;
+  --color-neutral-900: #1b2028;
+  --color-white: #fdfdfd;
+  --color-black: #09090a;
+  --color-shadow-nav: rgba(54, 64, 83, 0.08);
+  --surface-base: #edf0f2;
+  --surface-header: #fdfdfd;
+  --surface-footer: #d70c18;
+  --text-heading: #09090a;
+  --text-nav: #364053;
+  --text-nav-hover: #d70c18;
+  --text-nav-pressed: #a10912;
+  --text-content: #364053;
+  --text-caption: #727d8c;
+  --text-label: #727d8c;
+  --text-on-primary: #fdfdfd;
+  --icon-default: #364053;
+  --btn-logout: #d70c18;
+  --border-divider: #dce0e5;
+  --border-accent: #d70c18;
+  --spacing-4: 0.25rem;
+  --spacing-8: 0.5rem;
+  --spacing-10: 0.625rem;
+  --spacing-12: 0.75rem;
+  --spacing-16: 1rem;
+  --spacing-20: 1.25rem;
+  --spacing-24: 1.5rem;
+  --spacing-80: 5rem;
+  --shadow-nav: 0px 1px 4px rgba(54, 64, 83, 0.08);
+  --font-family: Noto Sans TC, sans-serif;
+  --font-family-tw: Noto Sans TC, sans-serif;
+  --font-family-en: Montserrat, sans-serif;
+  --font-size-3xl: 2rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-xl: 1.25rem;
+  --font-size-lg: 1.125rem;
+  --font-size-md: 1rem;
+  --font-size-sm: 0.875rem;
+  --font-size-xs: 0.75rem;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --letter-spacing-wide: 1px;
+  --letter-spacing-normal: 0;
+  --line-height-wide: 1.4;
+  --line-height-normal: 1;
+  --radius-btn-pill: 5rem;
+}
+
+@media (max-width: 1199px) {
+  :root {
+    --font-size-3xl: 1.5rem;
+    --font-size-2xl: 1.25rem;
+    --font-size-xl: 1.125rem;
+    --font-size-lg: 1rem;
+    --font-size-md: 0.875rem;
+    --font-size-sm: 0.75rem;
+    --font-size-xs: 0.625rem;
+    --letter-spacing-wide: 0;
+  }
+}
+html[lang=en],
+.lang-en {
+  --font-family: Montserrat, sans-serif;
+}
+
+/*# sourceMappingURL=main.css.map */
