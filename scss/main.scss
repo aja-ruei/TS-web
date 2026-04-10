@@ -6,7 +6,7 @@
 @use 'abstracts/variables' as *;
 
 // ==========================================================================
-// CSS Custom Properties — Primitive（色票，不直接用於元件）
+// CSS Custom Properties — Primitive
 // ==========================================================================
 :root {
   // TS Red
@@ -83,7 +83,7 @@
   --font-family-tw: #{$font-family-tw};
   --font-family-en: #{$font-family-en};
 
-  // Responsive — Desktop defaults (自動從 $responsive map 生成)
+  // Responsive — Desktop defaults (從 $responsive map 生成)
   @each $name, $modes in $responsive {
     --#{$name}: #{map.get($modes, desktop)};
   }
@@ -105,7 +105,7 @@
 }
 
 // ==========================================================================
-// Language 覆寫 — 對應 Figma Language collection en mode
+// Language — 對應 Figma Language collection en mode
 // 使用 html[lang="en"] 或 .lang-en 切換英文字型
 // ==========================================================================
 html[lang='en'],
