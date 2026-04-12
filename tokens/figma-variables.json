@@ -1,0 +1,793 @@
+[
+  {
+    "Language": {
+      "modes": {
+        "tw": {
+          "font-family": {
+            "$scopes": [
+              "FONT_FAMILY"
+            ],
+            "$type": "string",
+            "$value": "Noto Sans TC"
+          }
+        },
+        "en": {
+          "font-family": {
+            "$scopes": [
+              "FONT_FAMILY"
+            ],
+            "$type": "string",
+            "$value": "Montserrat"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Primitive": {
+      "modes": {
+        "Default": {
+          "color": {
+            "TS-red": {
+              "100": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#f7ced1"
+              },
+              "300": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#eb858b"
+              },
+              "500": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#d70c18"
+              },
+              "700": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#a10912"
+              },
+              "900": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#6c060c"
+              }
+            },
+            "RC-blue": {
+              "100": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#e2fbfe"
+              },
+              "300": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#64cedb"
+              },
+              "500": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#17b6c9"
+              },
+              "700": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#15a6b7"
+              },
+              "900": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#10818f"
+              }
+            },
+            "neutral": {
+              "50": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#f3f5f6"
+              },
+              "100": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#edf0f2"
+              },
+              "200": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#dce0e5"
+              },
+              "300": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#cdd3d9"
+              },
+              "400": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#b6bec7"
+              },
+              "500": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#727d8c"
+              },
+              "600": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#48556c"
+              },
+              "700": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#364053"
+              },
+              "800": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#222935"
+              },
+              "900": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#1b2028"
+              }
+            },
+            "white": {
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#fdfdfd"
+            },
+            "black": {
+              "$scopes": [
+                "ALL_SCOPES"
+              ],
+              "$type": "color",
+              "$value": "#09090a"
+            }
+          },
+          "spacing": {
+            "4": {
+              "$scopes": [
+                "WIDTH_HEIGHT",
+                "GAP"
+              ],
+              "$type": "float",
+              "$value": 4
+            },
+            "8": {
+              "$scopes": [
+                "WIDTH_HEIGHT",
+                "GAP"
+              ],
+              "$type": "float",
+              "$value": 8
+            },
+            "10": {
+              "$scopes": [
+                "WIDTH_HEIGHT",
+                "GAP"
+              ],
+              "$type": "float",
+              "$value": 10
+            },
+            "12": {
+              "$scopes": [
+                "WIDTH_HEIGHT",
+                "GAP"
+              ],
+              "$type": "float",
+              "$value": 12
+            },
+            "16": {
+              "$scopes": [
+                "WIDTH_HEIGHT",
+                "GAP"
+              ],
+              "$type": "float",
+              "$value": 16
+            },
+            "20": {
+              "$scopes": [
+                "WIDTH_HEIGHT",
+                "GAP"
+              ],
+              "$type": "float",
+              "$value": 20
+            },
+            "24": {
+              "$scopes": [
+                "WIDTH_HEIGHT",
+                "GAP"
+              ],
+              "$type": "float",
+              "$value": 24
+            },
+            "80": {
+              "$scopes": [
+                "WIDTH_HEIGHT",
+                "GAP"
+              ],
+              "$type": "float",
+              "$value": 80
+            }
+          },
+          "font-weight": {
+            "regular": {
+              "$scopes": [
+                "FONT_WEIGHT",
+                "FONT_VARIATIONS"
+              ],
+              "$type": "float",
+              "$value": 400
+            },
+            "medium": {
+              "$scopes": [
+                "FONT_WEIGHT"
+              ],
+              "$type": "float",
+              "$value": 500
+            },
+            "bold": {
+              "$scopes": [
+                "FONT_WEIGHT"
+              ],
+              "$type": "float",
+              "$value": 700
+            }
+          },
+          "radius": {
+            "sm": {
+              "$scopes": [
+                "CORNER_RADIUS"
+              ],
+              "$type": "float",
+              "$value": 4
+            },
+            "md": {
+              "$scopes": [
+                "CORNER_RADIUS"
+              ],
+              "$type": "float",
+              "$value": 8
+            },
+            "lg": {
+              "$scopes": [
+                "CORNER_RADIUS"
+              ],
+              "$type": "float",
+              "$value": 12
+            },
+            "xl": {
+              "$scopes": [
+                "CORNER_RADIUS"
+              ],
+              "$type": "float",
+              "$value": 16
+            },
+            "2xl": {
+              "$scopes": [
+                "CORNER_RADIUS"
+              ],
+              "$type": "float",
+              "$value": 24
+            },
+            "pill": {
+              "$scopes": [
+                "CORNER_RADIUS"
+              ],
+              "$type": "float",
+              "$value": 80
+            }
+          },
+          "line-height": {
+            "wide": {
+              "$codeSyntax": {
+                "WEB": "140%"
+              },
+              "$scopes": [
+                "LINE_HEIGHT"
+              ],
+              "$type": "float",
+              "$value": 1.399999976158142
+            },
+            "normal": {
+              "$codeSyntax": {
+                "WEB": "normal"
+              },
+              "$scopes": [
+                "LINE_HEIGHT"
+              ],
+              "$type": "float",
+              "$value": 0
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Responsive": {
+      "modes": {
+        "Desktop": {
+          "font-size": {
+            "3xl": {
+              "$scopes": [
+                "FONT_SIZE"
+              ],
+              "$type": "float",
+              "$value": 32
+            },
+            "2xl": {
+              "$scopes": [
+                "FONT_SIZE"
+              ],
+              "$type": "float",
+              "$value": 24
+            },
+            "xl": {
+              "$scopes": [
+                "FONT_SIZE"
+              ],
+              "$type": "float",
+              "$value": 20
+            },
+            "lg": {
+              "$scopes": [
+                "FONT_SIZE"
+              ],
+              "$type": "float",
+              "$value": 18
+            },
+            "md": {
+              "$scopes": [
+                "FONT_SIZE"
+              ],
+              "$type": "float",
+              "$value": 16
+            },
+            "sm": {
+              "$scopes": [
+                "FONT_SIZE"
+              ],
+              "$type": "float",
+              "$value": 14
+            },
+            "xs": {
+              "$scopes": [
+                "FONT_SIZE"
+              ],
+              "$type": "float",
+              "$value": 12
+            }
+          },
+          "letter-spacing": {
+            "wide": {
+              "$scopes": [
+                "LETTER_SPACING"
+              ],
+              "$type": "float",
+              "$value": 1
+            },
+            "normal": {
+              "$scopes": [
+                "LETTER_SPACING"
+              ],
+              "$type": "float",
+              "$value": 0
+            }
+          },
+          "layout": {
+            "viewport-width": {
+              "$scopes": [
+                "WIDTH_HEIGHT"
+              ],
+              "$type": "float",
+              "$value": 1440
+            },
+            "content-width": {
+              "$scopes": [
+                "WIDTH_HEIGHT"
+              ],
+              "$type": "float",
+              "$value": 1280
+            }
+          }
+        },
+        "Mobile": {
+          "font-size": {
+            "3xl": {
+              "$scopes": [
+                "FONT_SIZE"
+              ],
+              "$type": "float",
+              "$value": 24
+            },
+            "2xl": {
+              "$scopes": [
+                "FONT_SIZE"
+              ],
+              "$type": "float",
+              "$value": 20
+            },
+            "xl": {
+              "$scopes": [
+                "FONT_SIZE"
+              ],
+              "$type": "float",
+              "$value": 18
+            },
+            "lg": {
+              "$scopes": [
+                "FONT_SIZE"
+              ],
+              "$type": "float",
+              "$value": 16
+            },
+            "md": {
+              "$scopes": [
+                "FONT_SIZE"
+              ],
+              "$type": "float",
+              "$value": 14
+            },
+            "sm": {
+              "$scopes": [
+                "FONT_SIZE"
+              ],
+              "$type": "float",
+              "$value": 12
+            },
+            "xs": {
+              "$scopes": [
+                "FONT_SIZE"
+              ],
+              "$type": "float",
+              "$value": 10
+            }
+          },
+          "letter-spacing": {
+            "wide": {
+              "$scopes": [
+                "LETTER_SPACING"
+              ],
+              "$type": "float",
+              "$value": 0
+            },
+            "normal": {
+              "$scopes": [
+                "LETTER_SPACING"
+              ],
+              "$type": "float",
+              "$value": 0
+            }
+          },
+          "layout": {
+            "viewport-width": {
+              "$scopes": [
+                "WIDTH_HEIGHT"
+              ],
+              "$type": "float",
+              "$value": 375
+            },
+            "content-width": {
+              "$scopes": [
+                "WIDTH_HEIGHT"
+              ],
+              "$type": "float",
+              "$value": 351
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Semantic": {
+      "modes": {
+        "Default": {
+          "surface": {
+            "base": {
+              "$scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "$description": "頁面主背景（內容區）",
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitive",
+              "$value": "{color.neutral.50}"
+            },
+            "header": {
+              "$scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "$description": "Header 區塊背景",
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitive",
+              "$value": "{color.white}"
+            },
+            "footer": {
+              "$scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "$description": "Footer 區塊背景",
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitive",
+              "$value": "{color.TS-red.500}"
+            },
+            "overlay": {
+              "$codeSyntax": {
+                "WEB": "surface-overlay ($color-neutral-900 / 50%)"
+              },
+              "$scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ],
+              "$description": "遮罩層（Modal、Drawer 背後的半透明覆蓋）",
+              "$type": "color",
+              "$value": "rgba(27, 32, 40, 0.5)"
+            }
+          },
+          "bg": {
+            "input": {
+              "default": {
+                "$scopes": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ],
+                "$description": "Input 欄位背景色",
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Primitive",
+                "$value": "{color.white}"
+              }
+            },
+            "icon-btn": {
+              "hover": {
+                "$scopes": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ],
+                "$description": "Icon Button hover 時出現的背景",
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Primitive",
+                "$value": "{color.neutral.50}"
+              },
+              "pressed": {
+                "$scopes": [
+                  "FRAME_FILL",
+                  "SHAPE_FILL"
+                ],
+                "$description": "Icon Button pressed 時的背景",
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Primitive",
+                "$value": "{color.neutral.100}"
+              }
+            }
+          },
+          "text": {
+            "nav": {
+              "default": {
+                "$scopes": [
+                  "TEXT_FILL"
+                ],
+                "$description": "導航連結文字",
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Primitive",
+                "$value": "{color.neutral.800}"
+              },
+              "hover": {
+                "$scopes": [
+                  "TEXT_FILL"
+                ],
+                "$description": "導航連結文字 — 滑鼠懸停",
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Primitive",
+                "$value": "{color.TS-red.500}"
+              },
+              "pressed": {
+                "$scopes": [
+                  "TEXT_FILL"
+                ],
+                "$description": "導航連結文字 — 按下",
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Primitive",
+                "$value": "{color.TS-red.700}"
+              }
+            },
+            "on-brand": {
+              "$scopes": [
+                "TEXT_FILL"
+              ],
+              "$description": "品牌色背景上的文字（Footer、主要按鈕）",
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitive",
+              "$value": "{color.white}"
+            },
+            "caption": {
+              "$scopes": [
+                "TEXT_FILL"
+              ],
+              "$description": "Mega Menu 分區小標、表單欄位 label",
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitive",
+              "$value": "{color.neutral.500}"
+            },
+            "input": {
+              "placeholder": {
+                "$scopes": [
+                  "TEXT_FILL"
+                ],
+                "$description": "Input 欄位未填入時的提示文字",
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Primitive",
+                "$value": "{color.neutral.500}"
+              },
+              "value": {
+                "$scopes": [
+                  "TEXT_FILL"
+                ],
+                "$description": "Input 欄位已填入的文字",
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Primitive",
+                "$value": "{color.black}"
+              }
+            }
+          },
+          "border": {
+            "divider": {
+              "$scopes": [
+                "STROKE_COLOR"
+              ],
+              "$description": "分隔線（清單項目之間、區塊分隔）",
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitive",
+              "$value": "{color.neutral.200}"
+            },
+            "accent": {
+              "$scopes": [
+                "STROKE_COLOR"
+              ],
+              "$description": "品牌裝飾線、Nav hover 底線",
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitive",
+              "$value": "{color.TS-red.500}"
+            },
+            "input": {
+              "default": {
+                "$scopes": [
+                  "STROKE_COLOR"
+                ],
+                "$description": "Input 欄位預設邊線色",
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Primitive",
+                "$value": "{color.neutral.200}"
+              },
+              "focus": {
+                "$scopes": [
+                  "STROKE_COLOR"
+                ],
+                "$description": "Input 欄位聚焦時的邊線色（keyboard focus / click）",
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Primitive",
+                "$value": "{color.neutral.400}"
+              }
+            }
+          },
+          "icon": {
+            "default": {
+              "$scopes": [
+                "SHAPE_FILL",
+                "STROKE_COLOR"
+              ],
+              "$description": "UI chrome 圖示色（漢堡選單、搜尋、Logo 等靜態圖示）",
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitive",
+              "$value": "{color.neutral.700}"
+            }
+          },
+          "icon-btn": {
+            "default": {
+              "$scopes": [
+                "SHAPE_FILL",
+                "STROKE_COLOR"
+              ],
+              "$description": "可點擊圖示按鈕的預設色（獨立 icon button，非文字按鈕內部的圖示）",
+              "$type": "color",
+              "$libraryName": "",
+              "$collectionName": "Primitive",
+              "$value": "{color.neutral.700}"
+            }
+          },
+          "radius": {
+            "input": {
+              "$scopes": [
+                "CORNER_RADIUS"
+              ],
+              "$description": "Input 欄位圓角",
+              "$type": "float",
+              "$libraryName": "",
+              "$collectionName": "Primitive",
+              "$value": "{radius.md}"
+            }
+          },
+          "shadow": {
+            "nav": {
+              "$codeSyntax": {
+                "WEB": "$color-neutral-700 / 8%"
+              },
+              "$scopes": [
+                "EFFECT_COLOR"
+              ],
+              "$description": "導航陰影色，搭配 Effect Style - shadow-nav 使用",
+              "$type": "color",
+              "$value": "rgba(54, 64, 83, 0.08)"
+            }
+          }
+        }
+      }
+    }
+  }
+]

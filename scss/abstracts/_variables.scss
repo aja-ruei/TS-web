@@ -36,45 +36,9 @@ $color-neutral-900: #1b2028;
 // Others
 $color-white: #fdfdfd;
 $color-black: #09090a;
-$color-shadow-nav: rgba(54, 64, 83, 0.08);
 
 // --------------------------------------------------------------------------
-// Semantic — Colors（對應 Figma Semantic collection）
-// --------------------------------------------------------------------------
-// Surface（區塊底色）
-$surface-base:   $color-neutral-50;
-$surface-header: $color-white;
-$surface-footer: $color-ts-red-500;
-
-// Background（元件內部背景）
-$bg-input: $color-white;
-
-// Text
-$text-heading:           $color-black;
-$text-nav:               $color-neutral-800;
-$text-nav-hover:         $color-ts-red-500;
-$text-nav-pressed:       $color-ts-red-700;
-$text-content:           $color-neutral-700;
-$text-caption:           $color-neutral-500;
-$text-label:             $color-neutral-500;
-$text-input:             $color-black;
-$text-input-placeholder: $color-neutral-500;
-$text-on-primary:        $color-white;
-
-// Icon
-$icon-ui:             $color-neutral-700;
-$icon-action:         $color-neutral-700;
-$icon-action-hover:   $color-ts-red-500;
-$icon-action-pressed: $color-ts-red-700;
-
-// Border
-$border-divider:     $color-neutral-200;
-$border-accent:      $color-ts-red-500;
-$border-input:       $color-neutral-200;
-$border-input-focus: $color-neutral-400;
-
-// --------------------------------------------------------------------------
-// Primitive — Spacing （對應 Figma Primitive collection）
+// Primitive — Spacing（對應 Figma Primitive collection）
 // --------------------------------------------------------------------------
 $spacing-4:  0.25rem;
 $spacing-8:  0.5rem;
@@ -86,13 +50,84 @@ $spacing-24: 1.5rem;
 $spacing-80: 5rem;
 
 // --------------------------------------------------------------------------
-// Shadows
+// Primitive — Font Weight（對應 Figma Primitive collection）
 // --------------------------------------------------------------------------
-$shadow-nav: 0px 1px 4px $color-shadow-nav;
+$font-weight-regular: 400;
+$font-weight-medium:  500;
+$font-weight-bold:    700;
+
+// --------------------------------------------------------------------------
+// Primitive — Radius（對應 Figma Primitive collection）
+// --------------------------------------------------------------------------
+$radius-sm:   0.25rem;
+$radius-md:   0.5rem;
+$radius-lg:   0.75rem;
+$radius-xl:   1rem;
+$radius-2xl:  1.5rem;
+$radius-pill: 5rem;
+
+// --------------------------------------------------------------------------
+// Primitive — Line Height（對應 Figma Primitive collection）
+// --------------------------------------------------------------------------
+$line-height-wide:   1.4;
+$line-height-normal: normal;
+
+// --------------------------------------------------------------------------
+// Semantic — Surface（區塊底色）
+// --------------------------------------------------------------------------
+$surface-base:    $color-neutral-50;
+$surface-header:  $color-white;
+$surface-footer:  $color-ts-red-500;
+$surface-overlay: rgba($color-neutral-900, 0.5);
+
+// --------------------------------------------------------------------------
+// Semantic — Background（元件內部背景）
+// --------------------------------------------------------------------------
+$bg-input-default:    $color-white;
+$bg-icon-btn-hover:   $color-neutral-50;
+$bg-icon-btn-pressed: $color-neutral-100;
+
+// --------------------------------------------------------------------------
+// Semantic — Text
+// --------------------------------------------------------------------------
+$text-nav-default:      $color-neutral-800;
+$text-nav-hover:        $color-ts-red-500;
+$text-nav-pressed:      $color-ts-red-700;
+$text-on-brand:         $color-white;
+$text-caption:          $color-neutral-500;
+$text-input-placeholder: $color-neutral-500;
+$text-input-value:      $color-black;
+
+// --------------------------------------------------------------------------
+// Semantic — Icon
+// --------------------------------------------------------------------------
+$icon-default: $color-neutral-700;
+
+// --------------------------------------------------------------------------
+// Semantic — Icon Button
+// --------------------------------------------------------------------------
+$icon-btn-default: $color-neutral-700;
+
+// --------------------------------------------------------------------------
+// Semantic — Border
+// --------------------------------------------------------------------------
+$border-divider:       $color-neutral-200;
+$border-accent:        $color-ts-red-500;
+$border-input-default: $color-neutral-200;
+$border-input-focus:   $color-neutral-400;
+
+// --------------------------------------------------------------------------
+// Semantic — Radius
+// --------------------------------------------------------------------------
+$radius-input: $radius-md;
+
+// --------------------------------------------------------------------------
+// Semantic — Shadow
+// --------------------------------------------------------------------------
+$shadow-nav: 0px 1px 4px rgba($color-neutral-700, 0.08);
 
 // --------------------------------------------------------------------------
 // Language — Font Family（對應 Figma Language collection, tw / en mode）
-// CSS 中以 class 或 html[lang] 切換，而非 media query
 // --------------------------------------------------------------------------
 $font-family-tw: 'Noto Sans TC', sans-serif;
 $font-family-en: 'Montserrat', sans-serif;
@@ -119,23 +154,7 @@ $responsive: (
   'font-size-sm':  (desktop: 0.875rem,  mobile: 0.75rem),
   'font-size-xs':  (desktop: 0.75rem,   mobile: 0.625rem),
 
-  // Font Weight
-  'font-weight-regular': (desktop: 400, mobile: 400),
-  'font-weight-medium':  (desktop: 500, mobile: 500),
-  'font-weight-bold':    (desktop: 700, mobile: 700),
-
   // Letter Spacing
   'letter-spacing-wide':   (desktop: 1px,  mobile: 0),
   'letter-spacing-normal': (desktop: 0,    mobile: 0),
-
-  // Line Height
-  'line-height-wide':   (desktop: 1.4, mobile: 1.4),
-  'line-height-normal': (desktop: 1,   mobile: 1),
-
-  // Radius
-  'radius-btn-pill': (desktop: 5rem, mobile: 5rem),
-
-  // // Layout
-  // 'layout-viewport': (desktop: 1440px, mobile: 375px),
-  // 'layout-content':  (desktop: 1280px, mobile: 351px),
 );

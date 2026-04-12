@@ -38,39 +38,6 @@
   // Others
   --color-white: #{$color-white};
   --color-black: #{$color-black};
-  --color-shadow-nav: #{$color-shadow-nav};
-
-  // Semantic — Surface（區塊底色）
-  --surface-base:   #{$surface-base};
-  --surface-header: #{$surface-header};
-  --surface-footer: #{$surface-footer};
-
-  // Semantic — Background（元件內部背景）
-  --bg-input: #{$bg-input};
-
-  // Semantic — Text
-  --text-heading:           #{$text-heading};
-  --text-nav:               #{$text-nav};
-  --text-nav-hover:         #{$text-nav-hover};
-  --text-nav-pressed:       #{$text-nav-pressed};
-  --text-content:           #{$text-content};
-  --text-caption:           #{$text-caption};
-  --text-label:             #{$text-label};
-  --text-input:             #{$text-input};
-  --text-input-placeholder: #{$text-input-placeholder};
-  --text-on-primary:        #{$text-on-primary};
-
-  // Semantic — Icon
-  --icon-ui:             #{$icon-ui};
-  --icon-action:         #{$icon-action};
-  --icon-action-hover:   #{$icon-action-hover};
-  --icon-action-pressed: #{$icon-action-pressed};
-
-  // Semantic — Border
-  --border-divider:     #{$border-divider};
-  --border-accent:      #{$border-accent};
-  --border-input:       #{$border-input};
-  --border-input-focus: #{$border-input-focus};
 
   // Spacing
   --spacing-4:  #{$spacing-4};
@@ -82,7 +49,63 @@
   --spacing-24: #{$spacing-24};
   --spacing-80: #{$spacing-80};
 
-  // Shadows
+  // Font Weight
+  --font-weight-regular: #{$font-weight-regular};
+  --font-weight-medium:  #{$font-weight-medium};
+  --font-weight-bold:    #{$font-weight-bold};
+
+  // Radius
+  --radius-sm:   #{$radius-sm};
+  --radius-md:   #{$radius-md};
+  --radius-lg:   #{$radius-lg};
+  --radius-xl:   #{$radius-xl};
+  --radius-2xl:  #{$radius-2xl};
+  --radius-pill: #{$radius-pill};
+
+  // Line Height
+  --line-height-wide:   #{$line-height-wide};
+  --line-height-normal: #{$line-height-normal};
+
+  // ==========================================================================
+  // CSS Custom Properties — Semantic
+  // ==========================================================================
+
+  // Surface（區塊底色）
+  --surface-base:    #{$surface-base};
+  --surface-header:  #{$surface-header};
+  --surface-footer:  #{$surface-footer};
+  --surface-overlay: #{$surface-overlay};
+
+  // Background（元件內部背景）
+  --bg-input-default:    #{$bg-input-default};
+  --bg-icon-btn-hover:   #{$bg-icon-btn-hover};
+  --bg-icon-btn-pressed: #{$bg-icon-btn-pressed};
+
+  // Text
+  --text-nav-default:       #{$text-nav-default};
+  --text-nav-hover:         #{$text-nav-hover};
+  --text-nav-pressed:       #{$text-nav-pressed};
+  --text-on-brand:          #{$text-on-brand};
+  --text-caption:           #{$text-caption};
+  --text-input-placeholder: #{$text-input-placeholder};
+  --text-input-value:       #{$text-input-value};
+
+  // Icon
+  --icon-default: #{$icon-default};
+
+  // Icon Button
+  --icon-btn-default: #{$icon-btn-default};
+
+  // Border
+  --border-divider:       #{$border-divider};
+  --border-accent:        #{$border-accent};
+  --border-input-default: #{$border-input-default};
+  --border-input-focus:   #{$border-input-focus};
+
+  // Radius
+  --radius-input: #{$radius-input};
+
+  // Shadow
   --shadow-nav: #{$shadow-nav};
 
   // Language — 預設中文（對應 Figma Language collection tw mode）
