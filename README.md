@@ -71,16 +71,12 @@ npx sass --watch scss/main.scss css/main.css
 }
 ```
 
-### 使用 Typography Mixins
+### Typography Mixins
 
-`_typography.scss` 提供預組合的文字樣式 mixin，已包含 font-family、font-size、font-weight、line-height（使用 CSS Custom Properties 處理 Responsive 和 Language 切換）。
+`_typography.scss` 提供預組合的文字樣式 mixin。目前已確定可用的：
 
 ```scss
 @use 'abstracts/typography' as *;
-
-.page-title {
-  @include heading-title;   // 3xl / medium
-}
 
 .nav-link {
   @include text-nav;        // xl / regular / letter-spacing-wide
@@ -89,37 +85,15 @@ npx sass --watch scss/main.scss css/main.css
   &:hover { color: var(--text-nav-hover); }
   &:active { color: var(--text-nav-pressed); }
 }
-
-.paragraph {
-  @include text-body;       // lg / regular
-}
-
-.description {
-  @include text-base;       // md / regular
-}
-
-.footnote {
-  @include text-sm;         // sm / regular
-}
-
-.label {
-  @include text-xs;         // xs / regular
-}
 ```
 
-> Typography mixin 只負責排版屬性，不包含 `color`。顏色由元件依語意指定。
-
-### 可用的 Mixin 一覽
+> Mixin 只負責排版屬性，不包含 `color`。顏色由元件依語意指定。
 
 | Mixin | font-size | font-weight | 說明 |
 |-------|-----------|-------------|------|
-| `heading-title` | `--font-size-3xl` | medium | 頁面主標題 |
 | `text-nav` | `--font-size-xl` | regular | 導航連結（含 letter-spacing） |
-| `text-body` | `--font-size-lg` | regular | 內文段落 |
-| `text-base` | `--font-size-md` | regular | 基礎文字 |
-| `text-sm` | `--font-size-sm` | regular | 小字 |
-| `text-xs` | `--font-size-xs` | regular | 最小字 |
-| `text-en` | — | regular | 英文字型（不指定 size） |
+
+> 其餘 mixin（heading-title、text-body 等）尚未定稿，待設計確定後補充。
 
 ## CSS Custom Properties 總覽
 
