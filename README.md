@@ -92,6 +92,7 @@ npx sass --watch scss/main.scss css/main.css
 | Mixin | font-size | font-weight | 說明 |
 |-------|-----------|-------------|------|
 | `text-nav` | `--font-size-xl` | regular | 導航連結（含 letter-spacing） |
+| `text-en` | — | regular | 英文字型（不指定 size） |
 
 > 其餘 mixin（heading-title、text-body 等）尚未定稿，待設計確定後補充。
 
