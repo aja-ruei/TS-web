@@ -4,6 +4,7 @@
 
 @use 'sass:map';
 @use 'abstracts/variables' as *;
+@use 'abstracts/breakpoints' as *;
 
 // ==========================================================================
 // CSS Custom Properties — Primitive
@@ -122,7 +123,7 @@
 // ==========================================================================
 // Mobile — 只輸出與 Desktop 不同的值
 // ==========================================================================
-@media (max-width: $breakpoint-mobile-max) {
+@include mobile {
   :root {
     @each $name, $modes in $responsive {
       $desktop: map.get($modes, desktop);

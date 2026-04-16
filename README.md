@@ -71,6 +71,25 @@ npx sass --watch scss/main.scss css/main.css
 }
 ```
 
+### Breakpoint Mixins
+
+`_breakpoints.scss` 提供斷點 mixin，不需要直接引用 `$breakpoint-*` 變數：
+
+```scss
+@use 'abstracts/breakpoints' as *;
+
+.card {
+  padding: 24px;
+  @include mobile  { padding: 16px; }   // max-width: 1199px
+  @include desktop { padding: 32px; }   // min-width: 1200px
+}
+```
+
+| Mixin | 對應 Media Query | 說明 |
+|-------|-----------------|------|
+| `mobile` | `max-width: 1199px` | 行動裝置 |
+| `desktop` | `min-width: 1200px` | 桌面裝置 |
+
 ### Typography Mixins
 
 `_typography.scss` 提供預組合的文字樣式 mixin。目前已確定可用的：

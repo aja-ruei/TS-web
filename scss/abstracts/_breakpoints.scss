@@ -1,0 +1,18 @@
+// ==========================================================================
+// Breakpoint Mixins
+// 封裝斷點邏輯，使用端只需 @include mobile { ... } 或 @include desktop { ... }
+// ==========================================================================
+
+@use 'variables' as *;
+
+@mixin mobile {
+  @media (max-width: $breakpoint-mobile-max) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $breakpoint-desktop-min) {
+    @content;
+  }
+}
